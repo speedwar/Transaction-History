@@ -1,0 +1,16 @@
+{
+  "name": "Transaction History widget",
+  "version": "0.0.1",
+  "description": "Transaction History widget",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jimmy Lee",
+  "license": "ISC",
+  "dependencies": {
+    "angularjs": "^1.2.3",
+    "handlebars": "^4.0.5",
+    "yeoman-generator": "^0.21.1"
+  }
+}

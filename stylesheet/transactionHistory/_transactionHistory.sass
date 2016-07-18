@@ -1,0 +1,122 @@
+.balance-field
+	width: 100%
+	float: left
+	+doubleVerticallySeperated
+
+.balance-field-saving
+	margin-bottom: 30px
+	@media #{$tablet}
+		width: 50%
+		float: left
+.balance-field-current
+	width: 50%
+	float: left
+	margin-bottom: 15px
+	@media #{$tablet}
+		width: 25%
+		text-align: right
+		float: left
+.balance-field-avaliable
+	width: 50%
+	float: right
+	margin-bottom: 15px
+	@media #{$tablet}
+		width: 25%
+		text-align: right
+		float: left
+
+.balance-field-bold
+	+size3
+	margin-bottom: 10px
+.balance-field-account-number
+	+size4
+.balance-field-text
+	margin-bottom: 3px
+	+size5
+.balance-field-number
+	+size4
+
+.search-field
+	width: 100%
+	float: left
+	margin-bottom: 30px
+	&-label
+		margin-bottom: 5px
+		+size6
+
+.table-header
+	width: 100%
+	float: left
+	border-bottom: 2px solid $excel-border
+	ul
+		display: none
+		@media #{$tablet}
+			display: block
+
+.table-header li
+	padding: 15px
+	border-right: none
+	float: left
+	text-transform: capitalize
+	+size6
+
+.table-header-content-right,
+.table-body-content-right
+	text-align: right
+
+.table-header-content-first,
+.table-body-content-first
+	width: 100%
+	color: $white
+	background: $excel-background-alt
+	@media #{$tablet}
+		width: 15%
+		color: initial
+		background: none
+
+.table-header-content-second,
+.table-body-content-second
+	@media #{$tablet}
+		width: 35%
+
+.table-header-content-third,
+.table-body-content-third
+	float: right
+	+helvetica-bold
+	@media #{$tablet}
+		width: 25%
+		margin: 0
+		+helvetica-light
+
+.table-header-content-fourth,
+.table-body-content-fourth
+	display: none!important
+	@media #{$tablet}
+		width: 25%
+		display: block!important
+
+.table-body
+	width: 100%
+	float: left
+	@media #{$tablet}
+		border: 1px solid $excel-border
+	&-content
+	ul
+		width: 100%
+		float: left
+		@media #{$tablet}
+			border-bottom: 1px solid $excel-border
+	li
+		padding: 15px
+		display: inline-block
+		+size6
+		@media #{$tablet}
+			float: left
+
+.transaction-history-content
+	padding: 15px
+	@media #{$tablet}
+		padding: 30px 40px
+		margin: 0 auto
+		background: #fff
+		min-height: 600px

@@ -1,0 +1,43 @@
+{
+	"transactionHistory": [{
+		"date": "16/07/2016",
+		"description": "lorem ipsum dolor sit amet",
+		"debit": "160",
+		"balance": "41429"
+	}, {
+		"date": "15/07/2016",
+		"description": "Second transaction",
+		"debit": "400",
+		"balance": "41429"
+	}, {
+		"date": "14/07/2016",
+		"description": "Third transaction Received Intertest",
+		"credit": "435500",
+		"balance": "476529"
+	}, {
+		"date": "13/07/2016",
+		"description": "lorem ipsum dolor sit amet",
+		"debit": "18000",
+		"balance": "423930"
+	}, {
+		"date": "12/07/2016",
+		"description": "Consetetur adipisicing elit",
+		"debit": "34599",
+		"balance": "423930"
+	}, {
+		"date": "11/07/2016",
+		"description": "Fifth transaction",
+		"debit": "34599",
+		"balance": "423930"
+	}, {
+		"date": "10/07/2016",
+		"description": "Bpay transaction",
+		"debit": "34599",
+		"balance": "423930"
+	}, {
+		"date": "09/07/2016",
+		"description": "Paypass transaction",
+		"debit": "34599",
+		"balance": "423930"
+	}]
+}

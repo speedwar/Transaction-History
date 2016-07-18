@@ -1,0 +1,114 @@
+.navigation-top
+	background: $excel-background-alt
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2)
+	border-collapse: separate
+	position: relative
+	z-index: 5
+
+.navigation-bottom
+	background: $excel-background
+	position: relative
+	width: 100%
+	z-index: 6
+	float: left
+	.row
+		overflow: visible
+
+.nav-content-top
+	padding: 0 20px
+
+.navigation-top-items
+	margin: 0
+	padding: 0
+	li
+		display: inline
+		float: left
+	a
+		+helvetica-light
+
+.navigation-primary-items-control-logo
+	color: $white
+	display: table-cell
+	vertical-align: middle
+	padding: 0 10px
+	height: 70px
+	width: 200px
+	+size4
+	+helvetica-light
+
+.navigation-top-items-control
+	color: $white
+	display: block
+	padding: 18px 10px
+	position: relative
+	text-decoration: none
+	text-transform: capitalize
+	outline: 0
+	+size6
+
+.logo-navigation-primary,
+.navigation-primary-items .navigation-primary-items-control
+	border-left: 1px solid rgba(255, 255, 255, 0.05)
+	border-right: 1px solid rgba(255, 255, 255, 0.05)
+	color: $white
+	display: table-cell
+	vertical-align: middle
+	height: 70px
+	position: relative
+	text-align: center
+	width: 130px
+	+size5
+	+transition
+	&:after
+		content: ""
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0px
+		height: 4px
+		width: 100%
+		background: $white
+		+transition
+
+.nav-content-bottom
+	padding: 0 20px
+
+.logo-navigation-primary
+	display: block
+	border-left: none
+	padding: 16px 32px 0 0
+	height: 55px
+	width: 231px
+
+.navigation-primary-items
+	float: left
+	height: 70px
+	list-style: none
+	margin: 0
+	padding: 0
+	li
+		display: inline
+		float: left
+	a
+		+helvetica-light
+
+.navigation-primary-items-control:hover,
+.navigation-primary-items-control:focus,
+	color: $excel-active
+	&:after
+		background: $excel-active
+
+.navigation-top-items-control-active
+	color: $excel-active
+	&:after
+		content: ""
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0px
+		height: 4px
+		width: 100%
+		background: $excel-active
+
+.mobile-nav-button:hover, .mobile-nav-button:focus
+	background: #fff

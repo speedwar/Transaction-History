@@ -1,0 +1,39 @@
+.footer
+	background: $excel-background
+	float: left
+	width: 100%
+	z-index: 1
+
+.footer-container
+	padding: 40px 0 0 0
+
+.footer-content
+	position: relative
+	padding: 0 10px
+	@media #{$tablet}
+		padding: 0 30px
+
+.footer-nav
+	float: left
+	list-style: none
+	margin: .4375em 0 .625em 0
+	padding: .4375em 0
+	width: 100%
+	color: #aaa
+	font-weight: 100
+	li
+		float: left
+		margin: 0 .625em 0 0
+		font-size: .75em
+	li:after
+		content: '|'
+		margin-left: 6px
+	li:last-child:after
+		content: none
+	a
+		color: $white
+
+.footer .footer-nav li a:hover,
+.footer .footer-nav li a.active
+	color: $excel-active
+	+transition

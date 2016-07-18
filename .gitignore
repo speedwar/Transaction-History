@@ -1,0 +1,32 @@
+# General folders to ignore
+.idea/
+*.iml
+*.log
+*.orig
+.DS_Store
+.sass-cache
+
+# Deps folders
+node_modules/
+node_modules/*
+bower_components
+
+# App folders to ignore
+.jshintrc
+.jscsrc
+compiled/
+public/
+public/*
+tests/reports/
+port.*
+bundle.zip
+dist/
+tmp/
+
+# Mocha test report.
+test/report.xml
+
+/bundle
+bundle
+
+Thumbs.db

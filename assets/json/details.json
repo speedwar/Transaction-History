@@ -1,0 +1,8 @@
+{
+	"accountNumber": "10101021",
+	"accountType": "Savings Account",
+	"currentBalance": "765432100",
+	"availableBalance": "765432100",
+	"countryCode":"AUS",
+	"currency": "AUD"
+}

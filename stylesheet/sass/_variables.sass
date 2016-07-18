@@ -1,0 +1,111 @@
+//Breakpoints
+$screen-min: 320px
+$screen-xxs: 380px
+$screen-xs: 480px
+$screen-sm: 768px
+$screen-md: 1024px
+$lg: '(max-width: 1024px)'
+$md: '(min-width: 765px) and (max-width: 1023px)'
+$sm: '(min-width: 481px) and (max-width: 764px)'
+$tablet: '(min-width: 764px)'
+$mobile: '(min-width: 480px)'
+
+//colours
+$excel-default: #231f20
+$excel-active: #fc0
+$excel-hover: #123662
+$excel-border: #e3e3e3
+$excel-background: #191919
+$excel-background-alt: #1b282c
+$excel-background-light: #f4f4f4
+
+$white: #fafafa
+
+//_font.sass
+=helvetica-light
+	font-family: Helvetica,Arial,sans-serif
+	font-weight: 100
+
+=helvetica
+	font-family: Helvetica,Arial,sans-serif
+	font-weight: 400
+
+=helvetica-bold
+	font-family: Helvetica,Arial,sans-serif
+	font-weight: 900
+
+//_spacing.sass
+=doubleVerticallySeperated
+	margin: 30px 0
+
+=verticallySeperated
+	margin: 15px 0
+
+=doubleVerticallyPadded
+	padding: 30px 0
+
+=verticallyPadded
+	padding: 15px 0
+
+=halfVerticallyPadded
+	padding: 7.5px 0
+
+//_size.sass
+=size2
+	font-size: 28px
+	line-height: 20px
+
+=size3
+	font-size: 24px
+	line-height: 20px
+
+=size4
+	font-size: 20px
+	line-height: 20px
+
+=size5
+	font-size: 16px
+	line-height: 20px
+
+=size6
+	font-size: 14px
+	line-height: 20px
+
+//_mixin.sass
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	-o-border-radius: $radius
+	border-radius: $radius
+// +border-radius(5px)
+
+=box-shadow($box-shadow)
+	-webkit-box-shadow: $box-shadow
+	-moz-box-shadow: $box-shadow
+	-ms-box-shadow: $box-shadow
+	-o-box-shadow: $box-shadow
+	box-shadow: $box-shadow
+// +box-shadow(#333 3px 3px 3px)
+
+=transition
+	-webkit-transition: all 0.3s ease-out
+	-moz-transition: all 0.3s ease-out
+	-ms-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+// +transition
+
+=box-sizing
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	-o-box-sizing: border-box
+	box-sizing: border-box
+// +box-sizing
+
+=appearance
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+// +appearance

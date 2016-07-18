@@ -1,0 +1,15 @@
+{
+	"data": {
+		"navigation": [{
+			"item": "abank"
+		}, {
+			"item": "Accounts"
+		}],
+		"breadcrumb": [{
+			"item": "transcation History"
+		}],
+		"searchLabel": "Search for description",
+		"searchButton": "Search",
+		"loadButton": "Load more transactions"
+	}
+}

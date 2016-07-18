@@ -1,0 +1,38 @@
+button
+	color: $white
+	background: $excel-background
+	box-sizing: border-box
+	+size6
+	&:hover
+		color: $excel-active
+
+.search-button
+	width: 100%
+	height: 48px
+	padding: 10px 15px
+	float: left
+	margin-right: 20px
+	position: relative
+	@media #{$tablet}
+		width: 180px
+
+.search-input
+	width: 100%
+	height: 48px
+	padding: 10px 15px
+	float: left
+	position: relative
+	margin-right: 20px
+	background: #fff
+	box-sizing: border-box
+	+size6
+	@media #{$tablet}
+		width: 230px
+
+.btn-loadmore
+	width: 100%
+	color: white
+	background: $excel-default
+	text-align: center
+	+size5
+	+verticallyPadded
