@@ -18,10 +18,6 @@
 		<meta name="description" content="Transcation History">
 		<meta name="last-modified-date" content="2016-17-17">
 		<meta name="format-detection" content="telephone=no">
-		<script src="libs/vendors/angular-1.2.29/angular.min.js" type="text/javascript"></script>
-		<script src="libs/vendors/angular-1.2.29/angular-route.min.js" type="text/javascript"></script>
-		<script src="libs/vendors/angular-1.2.29/angular-animate.min.js" type="text/javascript"></script>
-		<script src="javascript/transactionHistory.js" type="text/javascript"></script>
 		<link href="stylesheet/core.css" rel="stylesheet" type="text/css"/>
 	</head>
 
@@ -115,7 +111,7 @@
 						<li class="table-header-content-right table-header-content-fourth">balance</li>
 					</ul>
 				</div>
-				<div class="table-body">
+				<div class="table-body" ng-cloak>
 					<ul class="table-body-content" ng-repeat="item in transactionHistoryList | filter:search | limitTo:quantity">
 						<li class="table-body-content-left table-body-content-first">{{item.date}}</li>
 						<li class="table-body-content-left table-body-content-second">{{item.description}}</li>
@@ -155,7 +151,12 @@
 
 
 	</div><!-- END: .app -->
+	<script src="libs/vendors/angular-1.2.29/angular.min.js" type="text/javascript"></script>
+	<script src="libs/vendors/angular-1.2.29/angular-route.min.js" type="text/javascript"></script>
+	<script src="libs/vendors/angular-1.2.29/angular-animate.min.js" type="text/javascript"></script>
 	<script src="libs/underscore-min.js" type="text/javascript"></script>
+	<script src="libs/angular-underscore-module.js" type="text/javascript"></script>
+	<script src="javascript/transactionHistory.js" type="text/javascript"></script>
 	<script src="libs/jquery-1.11.3.min.js" type="text/javascript"></script>
 	</body>
 </html>

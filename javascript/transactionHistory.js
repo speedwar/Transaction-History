@@ -1,6 +1,6 @@
-var app = angular.module('transactionHistoryApp', []);
-app.controller('transactionHistoryController', function($scope, $http) {
-	'use strict';
+'use strict';
+var app = angular.module('transactionHistoryApp', ['underscore']);
+app.controller('transactionHistoryController', function($scope, $http, _) {
 
 	//cachebuster: Always fetch the file from the server instead of from the cache.
 	var startTime = new Date().getTime(),
@@ -16,7 +16,6 @@ app.controller('transactionHistoryController', function($scope, $http) {
 	$scope.search = {};
 	$scope.quantity = initialTransactions;
 
-	//Put all functions here
 	function initialise() {
 		transactionHistoryRequest();
 		//$scope.$watch();
@@ -37,6 +36,45 @@ app.controller('transactionHistoryController', function($scope, $http) {
 		//Ex: $scope.errorMessage = response.error;
 		//console.log('error');
 		return false;
+	}
+
+	//TODO: Haven't tested with angularjs
+	function convertUnits(value, type, showUnits, handler) {
+		var result = value;
+
+		if (_.isNull(showUnits) || _.isUndefined(showUnits)) {
+			showUnits = false;
+		}
+
+		switch (type.toLowerCase()) {
+			case 'cent':
+			case 'cents':
+				// showUnits is redundant in this use case.
+				// Multiple purposing showUnits to determine how many decimals we want to show.
+				var decimals = _.isBoolean(showUnits) ? 2 : showUnits;
+				result = this.convertCentsToDollars(value, 1, decimals);
+				break;
+			case '$':
+			case 'dollar':
+				// No change to value - server provided data in correct format.
+				// Force to 2 decimal places, that means 50 -> $50.00.
+				value = parseFloat(value);
+				if (value < 0) {
+					value = -1 * value;
+					result = '$' + (value || 0).toFixed(2) + '(CR)';
+				} else {
+					result = '$' + (value || 0).toFixed(2);
+				}
+				break;
+			case 'showdecimals':
+				var decimals = _.isBoolean(showUnits) ? 2 : showUnits;
+				result = parseFloat(value).toFixed(decimals);
+				break;
+			default:
+				result = showUnits ? [result, type].join(' ') : result;
+				break;
+		}
+		return result;
 	}
 
 	$scope.descriptionSearch = function() {

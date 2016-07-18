@@ -206,6 +206,9 @@ a:focus {
 *:after {
   box-sizing: border-box; }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
 .app {
   position: relative;
   width: 100%;
